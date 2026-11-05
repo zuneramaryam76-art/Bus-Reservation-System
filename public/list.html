@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <title>List Buses</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="list">
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a class="active" href="list.html">List Buses</a>
+    <a href="listOne.html">Find Bus</a>
+    <a href="insert.html">Add Bus</a>
+    <a href="update.html">Update Bus</a>
+    <a href="delete.html">Delete Bus</a>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <h1>All Buses</h1>
+      <p>Live data from your database.</p>
+    </section>
+    
+
+    <section class="card">
+      <label>Select a bus</label>
+      <select id="list-select">
+        <option>Loading buses…</option>
+      </select>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Bus No</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Departure</th>
+            <th>Seats</th>
+          </tr>
+        </thead>
+
+        <tbody id="bus-table"></tbody>
+      </table>
+
+      <p id="status"></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

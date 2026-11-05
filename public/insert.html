@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <title>Add Bus</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="insert">
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="list.html">List Buses</a>
+    <a href="listOne.html">Find Bus</a>
+    <a class="active" href="insert.html">Add Bus</a>
+    <a href="update.html">Update Bus</a>
+    <a href="delete.html">Delete Bus</a>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Add Bus</h1>
+      <p>Create a new bus route.</p>
+    </section>
+    
+
+    <section class="card">
+      <form id="bus-form">
+        <label>Bus Number</label>
+        <input id="bus-no" required>
+
+        <label>Source</label>
+        <input id="source" required>
+
+        <label>Destination</label>
+        <input id="destination" required>
+
+        <label>Time of Departure</label>
+        <input id="departure" type="time" required>
+
+        <label>Total Number of Seats</label>
+        <input id="seats" type="number" min="1" required>
+
+        <button type="submit">Save Bus</button>
+      </form>
+
+      <p id="status"></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

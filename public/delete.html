@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <title>Delete Bus</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="delete">
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="list.html">List Buses</a>
+    <a href="listOne.html">Find Bus</a>
+    <a href="insert.html">Add Bus</a>
+    <a href="update.html">Update Bus</a>
+    <a class="active" href="delete.html">Delete Bus</a>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Delete Bus</h1>
+      <p>Select an existing bus from the database.</p>
+    </section>
+    
+
+    <section class="card">
+      <label>Bus</label>
+      <select id="bus-select">
+        <option>Loading buses…</option>
+      </select>
+
+      <button id="delete-button" type="button">Delete Bus</button>
+
+      <p id="status"></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

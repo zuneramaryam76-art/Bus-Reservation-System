@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <title>Find Bus</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="one">
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="list.html">List Buses</a>
+    <a class="active" href="listOne.html">Find Bus</a>
+    <a href="insert.html">Add Bus</a>
+    <a href="update.html">Update Bus</a>
+    <a href="delete.html">Delete Bus</a>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Find a Bus</h1>
+      <p>Select a bus that already exists in the database.</p>
+    </section>
+    
+
+    <section class="card">
+      <label>Bus</label>
+      <select id="bus-select">
+        <option>Loading buses…</option>
+      </select>
+
+      <div id="bus-result"></div>
+      <p id="status"></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
